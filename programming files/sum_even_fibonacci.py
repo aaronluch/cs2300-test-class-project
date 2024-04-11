@@ -1,11 +1,12 @@
+# bugs introduced: checks if number is odd, sum starts at 1 LB
 # set initial fibonacci values
 a, b = 0, 1
 #intialize full sum
-sum_even = 0
+sum_even = 1
 # confirm less than 4 million 
 while b < 4000000:
     #check number is even
-    if b % 2 == 0:
+    if b % 2 != 0:
         #add it to sum
         sum_even += b
     #advance the sequence
