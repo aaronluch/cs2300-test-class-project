@@ -1,3 +1,5 @@
+# added two bugs - Jack Donovan
+
 # Declare funtion
 def remove_duplicates(arr):
     arr.sort()
@@ -6,8 +8,8 @@ def remove_duplicates(arr):
     removed_elements = []
     # Loop thru the array
     for i in range(len(arr)):
-        if i == 0 or arr[i] != arr[i-1]:
-            unique_arr.append(arr[i])
+        if i == 0 and arr[i] != arr[i-1]:
+            removed_elements.append(arr[i])
         else:
             removed_elements.append(arr[i])
     return unique_arr, removed_elements
