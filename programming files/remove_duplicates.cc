@@ -12,10 +12,10 @@ vector<int> remove_duplicates(vector<int> arr, vector<int>& removed_elements){
     int n = arr.size();
     for(int i=0; i<n; i++){
         if(i == 0 || arr[i] != arr[i-1]){
-            unique_arr.push_back(arr[i+1]);
+            unique_arr.push_back(arr[i]);
         }
         else{
-            removed_elements.push_back(arr[i+1]);
+            removed_elements.push_back(arr[i]);
         }
     }
     return unique_arr;
