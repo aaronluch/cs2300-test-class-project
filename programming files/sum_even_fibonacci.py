@@ -6,7 +6,7 @@ sum_even = 0
 # confirm less than 4 million 
 while b < 4000000:
     #check number is even
-    if b % 2 != 0:
+    if b % 2 == 0:
         #add it to sum
         sum_even += b
     #advance the sequence
