@@ -2,7 +2,9 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
-
+/*
+    remove_duplicates removes repeated integers from an array and adds those ints to a different array
+*/
 vector<int> remove_duplicates(vector<int> arr, vector<int>& removed_elements){
     vector<int> unique_arr;
     sort(arr.begin(), arr.end());
