@@ -1,5 +1,6 @@
 # added two bugs - Jack Donovan
-
+# bug: if statement should be i!=0, will cause an array index error, high priority
+# bug: if statement should be arr[i]==arr[i-1], to test if the ints are repeated, high priority
 # Declare funtion
 def remove_duplicates(arr):
     arr.sort()
