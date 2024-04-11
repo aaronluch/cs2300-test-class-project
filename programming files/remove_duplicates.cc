@@ -1,3 +1,4 @@
+// Bugs introduced - SR
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -11,10 +12,10 @@ vector<int> remove_duplicates(vector<int> arr, vector<int>& removed_elements){
     int n = arr.size();
     for(int i=0; i<n; i++){
         if(i == 0 || arr[i] != arr[i-1]){
-            unique_arr.push_back(arr[i]);
+            unique_arr.push_back(arr[i+1]);
         }
         else{
-            removed_elements.push_back(arr[i]);
+            removed_elements.push_back(arr[i+1]);
         }
     }
     return unique_arr;
